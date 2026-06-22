@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: linear-gradient(rgba(0,0,0,0.5)),url(/erika-fletcher-MZxqc6n9qCw-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 50vh;
+    width: 550px;
+    height: 450px;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+.container h2{
+    color: white;
+    font-size: 25px;
+
+}
+#input{
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: white;
+    background-color: white;
+    font-size: 18px;
+    border: 2px solid white;
+
+
+}
+
+#check{
+   border-radius: 5px;
+   color: black;
+   padding: 5px 15px;
+   font-size: 15px;
+   background: white;
+
+}
+#check:hover{
+    background: transparent;
+    cursor: pointer;
+}
+
+

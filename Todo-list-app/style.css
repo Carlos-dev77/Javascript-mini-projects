@@ -1,0 +1,148 @@
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family:  Arial;
+  background: beige;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 16px;
+  background:url(/Images/vladislav-vasilev-9qbPV3dvna0-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.container{
+  background: #ffffff;
+  width: 100%;
+  max-width: 520px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(16,24,40,0.08);
+  padding: 20px;
+}
+
+.container h2{
+  font-size: 20px;
+  color: black;
+  margin: 12px 10px;
+}
+
+.input-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+#task-input{
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #e6e9ef;
+  flex: 1;
+  font-size: 15px;
+  outline: none;
+}
+
+#task-input:focus{
+  box-shadow: 0 0 0 4px rgba(59,130,246,0.08);
+  border-color: #3b82f6;
+}
+
+#add-btn{
+  padding: 8px 14px;
+  border: none;
+  background: #4b0082;
+  color: white;
+  border-radius: 10px;
+  transition: background .18s ease;
+  cursor: pointer;
+  width:80px;
+}
+
+#add-btn:hover{
+  background: #8310d5ee;
+}
+#clear-btn{
+    padding: 8px 14px;
+  border: none;
+  background: #4b0082;
+  color: white;
+  border-radius: 10px;
+  transition: background .18s ease;
+  cursor: pointer;
+  width: 80px;
+}
+#clear-btn:hover{
+  background: #8310d5ee;
+}
+
+
+#list-container{ 
+  list-style: none; 
+  font-size: 17px;
+  padding: 12px 8px 12px 8px; 
+  margin: 0;
+ }
+ #list-container li{
+  margin-top: 8px;
+  padding: 10px 50px 10px 12px;
+  border-radius: 10px;
+  background: #f8f8ff;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+ }
+
+ #list-container li.checked .task-text{
+    text-decoration: line-through;
+    color: #6b7280;
+ }
+
+ #list-container .task-checkbox{
+    width: 18px;
+    height: 18px;
+    accent-color: #4b0082;
+    cursor: pointer;
+ }
+
+ #list-container .task-text{
+    flex: 1;
+    cursor: pointer;
+ }
+
+ #list-container .close{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 28px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+ }
+ #list-container .close:hover{
+    background: #6b7280;
+    color: white;
+ }
+
+
+
+
+
+
+
+
+  

@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(/Quote-generator/2y-kang-dFohf_GUZJ0-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+.main-content{
+    height: 200px;
+    width: 350px;
+    background-color: white;
+    color: white;
+    border-radius: 10px;
+}
+
+.header h2{
+    text-align: center;
+    color: white;
+    
+}
+.quotes{
+     padding: 50px auto;
+     margin-top: 45px;
+     color: black;
+     font-size: 20px;
+     
+
+}
+
+.person{
+    color: red;
+    margin-top: 25px;
+    font-size:20px ;
+}
+
+.generate-btn{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background:black ;
+    color: white;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+.generate-btn:hover{
+    cursor: pointer;
+
+}
+.generate-btn:after{
+    background-color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
