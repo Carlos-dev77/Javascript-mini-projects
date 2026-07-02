@@ -1,22 +1,23 @@
-// Css for the paliandrome checker
-const input = document.querySelector('#input');
-   
- function reverseString(str){
-    return str.split("").reverse().join("");
- }
- function checkValue(){
-    const value = input.value;
-    const newValue = reverseString(value);
+// Interactivity  for the paliandrome checker
 
-  if (value ===newValue){
-    alert('It is a paliandrome');
-  }
-else {
-    alert('It is not a paliandrome');
+const input =document.querySelector('#input');
+const checkBtn=document.querySelector('#check');
+function reverseString(str){
+     return str.split("").reverse().join("");
 }
-
-input.value="";
+ checkBtn.addEventListener('click',()=>{
+    const value=input.value;
+  const reverse=reverseString(value);
+ 
+ if(value===reverse){
+  alert('It is a paliandrome');
  }
+ else{
+  alert('It is not a paliandrome ')
+ }
+ input.value="";
+ }
+);
 
 
 

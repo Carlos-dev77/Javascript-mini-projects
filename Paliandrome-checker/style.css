@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background: linear-gradient(rgba(0,0,0,0.5)),url(/erika-fletcher-MZxqc6n9qCw-unsplash.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5)),url(/Paliandrome-checker/erika-fletcher-MZxqc6n9qCw-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -21,6 +21,7 @@
     margin: 20px auto;
     border-radius: 10px;
     border: 2px solid white;
+    box-shadow: 5px 10px 15px rgba(0,0,0,0.5);
 }
 .container h2{
     color: white;
@@ -48,7 +49,6 @@
 
 }
 #check:hover{
-    background: transparent;
     cursor: pointer;
 }
 

@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e6c8c8ef;
+}
+#count-label{
+    font-size: 50px;
+}
+.button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    background-color: hsl(271, 76%, 53%);
+    cursor: pointer;
+}
+.button:hover{
+    background-color: hsl(271, 76%, 33%);
+
+}
