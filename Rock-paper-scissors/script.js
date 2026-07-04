@@ -10,6 +10,13 @@
     const playerDisplay = document.querySelector('#playerDisplay');
     const computerDisplay = document.querySelector('#computerDisplay');
     const resultDisplay = document.querySelector('#resultDisplay');
+    const playerScoreDisplay = document.querySelector('#playerScoreDisplay');
+    const computerScoreDisplay = document.querySelector('#computerScoreDisplay');
+
+    let playerScore = 0;
+    let computerScore = 0;
+
+
 
     // Button interactivity
     rockBtn.addEventListener('click',playGame);
@@ -18,6 +25,7 @@
 
 
     // The function itself
+
     function playGame(playerChoice){
         const computerChoice = choices[Math.floor(Math.random()* 3)];
         let result = "";
@@ -44,6 +52,22 @@
         playerDisplay.textContent = `Player: ${playerChoice}`;
         computerDisplay.textContent = `Computer: ${computerChoice}`;
         resultDisplay.textContent = result;
+   
+        resultDisplay.classList.remove("greenText","redText");
+
+        switch(result){
+            case "YOU WIN":
+                resultDisplay.classList.add("greenText");
+                playerScore++;
+                playerScoreDisplay.textContent = playerScore;
+                break;
+
+             case "YOU LOOSE":
+                resultDisplay.classList.add("redText");
+                computerScore++;
+                computerScoreDisplay.textContent = playerScore;
+                break;
+        }
 
     }
 
